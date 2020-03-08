@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Webpage Title -->
+  <title>Hello, world!</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- JS -->		
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <style>
+    .wrap {
+      width : 500px;
+      margin : auto;
+    }
+
+    #horizontal_div {
+
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: flex-start;
+
+    }
+
+    img {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    
+  </style>
+
+  <script>
+    let count = 0;
+    function hey() {
+      count += 1;
+      if (count<5){
+        alert(count + "번 클릭하셨네요!");
+      }
+      else {
+        alert("그만 클릭하세요!")
+      }
+    }
+  </script>
+</head>
+<body>  
+
+  <div class="wrap">
+    <div> 
+      <!-- image division -->
+      <img src="https://t1.daumcdn.net/cfile/tistory/995108445C09568E26"/>
+    </div>
+    <div>
+      <!-- goods explanation division -->
+      <div id="horizontal_div">
+        <h1> 신발 팝니다   </h1> &emsp;가격: 0원
+      </div>
+      <p> 어글리 슈즈 트렌드를 이끈 신발! 사이즈가 맞지 않아 나눔합니다~ 어서 가져가세요~! </p>
+    </div>
+
+    <div id="my-posting-box">
+      <!-- text and button division -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">이름</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" id="id-input" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">수량</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+
+      <button onclick="hey()" id="button-id">구매하기</button>
+    </div>
+
+  </div>
+</body>
+</html>
